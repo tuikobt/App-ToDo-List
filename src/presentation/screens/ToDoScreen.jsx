@@ -1,9 +1,9 @@
 import React from "react";
 import { View, StyleSheet, SafeAreaView, StatusBar } from "react-native";
-import { ToDoList } from "../components/ToDoList.jsx";
+import ToDoList from "../components/ToDoList.jsx";
 import { useTodos } from "../hooks/useTodos.js";
 
-export const TodoScreen = () => {
+export default function ToDoScreen() {
   const { todos, loading, error, addTodo, toggleTodo } = useTodos();
 
   return (
@@ -18,7 +18,7 @@ export const TodoScreen = () => {
       />
     </SafeAreaView>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {

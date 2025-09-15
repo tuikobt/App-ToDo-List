@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { GetTodosUseCase } from "../../application/use-cases/GetTodosUseCase.js";
-import { AddTodoUseCase } from "../../application/use-cases/AddTodoUseCase.js";
-import { ToggleTodoUseCase } from "../../application/use-cases/ToggleTodoUseCase.js";
+import { GetTodosUseCase } from "../../application/usecases/GetTodosUseCase.js";
+import { AddTodoUseCase } from "../../application/usecases/AddTodoUseCase.js";
+import { ToggleTodoUseCase } from "../../application/usecases/ToggleTodoUseCase.js";
 import { AsyncStorageTodoRepository } from "../../infrastructure/repositories/AsyncStorageTodoRepository.js";
 
 export const useTodos = () => {
