@@ -8,15 +8,15 @@ import {
   StyleSheet,
   Alert,
 } from "react-native";
-import { ToDoItem } from "./TodoItem.jsx";
+import ToDoItem from "./ToDoItem.jsx";
 
-export const ToDoList = ({
+export default function ToDoList({
   todos,
   onAddTodo,
   onToggleTodo,
   loading,
   error,
-}) => {
+}) {
   const [newTodoTitle, setNewTodoTitle] = useState("");
 
   const handleAddTodo = () => {
@@ -102,7 +102,7 @@ export const ToDoList = ({
       />
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {

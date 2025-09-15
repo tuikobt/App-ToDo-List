@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 
-export const ToDoItem = ({ todo, onToggle }) => {
+export default function ToDoItem({ todo, onToggle }) {
   const handlePress = () => {
     onToggle(todo.id);
   };
@@ -42,7 +42,7 @@ export const ToDoItem = ({ todo, onToggle }) => {
       </View>
     </TouchableOpacity>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
